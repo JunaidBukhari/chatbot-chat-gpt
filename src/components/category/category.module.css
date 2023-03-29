@@ -1,0 +1,9 @@
+.cardStyle {
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+.cardStyle:hover {
+  color: white;
+  background-color: black;
+  scale: 1.02;
+}
