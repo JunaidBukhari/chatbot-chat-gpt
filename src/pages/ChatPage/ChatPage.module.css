@@ -1,0 +1,38 @@
+.answer {
+  border: 1px solid rgb(227 227 227);
+  display: flex;
+  padding: 4em;
+  padding-top: 1em;
+  margin: 3em 0em;
+  border-radius: 0.5em;
+}
+.lightText {
+  color: rgb(147, 147, 147);
+  margin-top: 2em;
+}
+.typewriter p {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.75s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

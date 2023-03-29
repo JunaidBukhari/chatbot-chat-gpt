@@ -1,6 +1,8 @@
 .cardStyle {
   cursor: pointer;
   transition: scale 0.5s;
+  text-decoration: none;
+  height: 16em;
 }
 .cardStyle:hover {
   color: white;
