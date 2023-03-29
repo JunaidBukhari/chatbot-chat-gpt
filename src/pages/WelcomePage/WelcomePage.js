@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WelcomePage = () => {
   return (
@@ -7,7 +8,9 @@ const WelcomePage = () => {
       <p>This is a basic react application which uses API from chatGpt</p>
       <p>Click the button below to proceed</p>
       <div>
-        <button className='btn btn-lg'><i className="bi bi-arrow-right-circle-fill"></i></button>
+        <Link to="/categories" className="btn btn-lg">
+          <i className="bi bi-arrow-right-circle-fill fs-2"></i>
+        </Link>
       </div>
     </div>
   );
