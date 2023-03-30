@@ -7,14 +7,13 @@ console.log(process.env.REACT_APP_OPENAI_API_KEY);
 export const openai = new OpenAIApi(configuration);
 
 export function generatePrompt(question, type) {
-  console.log(question, type);
   if (type === 'pet') {
     const capitalizedAnimal =
       question[0].toUpperCase() + question.slice(1).toLowerCase();
-    return `Suggest three names for an animal that is a superhero.
+    return `Suggest three names for an animal.
     
     Animal: Cat
-    Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+    Names: snowy, Fluffball, The Incredible Feline
     Animal: Dog
     Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
     Animal: ${capitalizedAnimal}
