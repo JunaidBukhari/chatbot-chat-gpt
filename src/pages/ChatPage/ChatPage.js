@@ -65,7 +65,6 @@ const ChatPage = () => {
       alert(error.message);
     }
   }
-  console.log(result.length);
   return (
     <div className="d-flex justify-content-center">
       <div className="col-sm-12 col-lg-8 card text-center">
