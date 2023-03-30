@@ -11,7 +11,7 @@ const categories = [
   },
   {
     name: 'company',
-    message: 'Please industry type to suggest names',
+    message: 'Please enter industry type to suggest names',
     buttonText: 'Send',
   },
   {
@@ -68,7 +68,7 @@ const ChatPage = () => {
   console.log(result.length);
   return (
     <div className="d-flex justify-content-center">
-      <div className="col-10 card text-center">
+      <div className="col-sm-12 col-lg-8 card text-center">
         <div className="m-5">
           <i className="bi bi-robot fs-1 d-block mb-4"></i>
 
@@ -90,7 +90,7 @@ const ChatPage = () => {
             {thinking ? (
               <div className={styles.lightText}>Generating ....</div>
             ) : (
-              <div className={`${writingClass} text-start mt-5`}>
+              <div className={`${writingClass} mt-5`}>
                 <p>
                   {result}
                   <em className="text-danger">
