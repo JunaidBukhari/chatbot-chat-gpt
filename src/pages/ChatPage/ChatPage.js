@@ -52,7 +52,7 @@ const ChatPage = () => {
       setResult('');
       setWritingClass('');
       const completion = await openai.createCompletion({
-        model: 'text-davinci-003',
+        model: 'gpt-3.5-turbo-0125',
         prompt: generatePrompt(question, category.name),
         temperature: 1,
       });
